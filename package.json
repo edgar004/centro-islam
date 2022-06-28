@@ -1,0 +1,70 @@
+{
+  "name": "now-ui-kit-react",
+  "version": "1.5.0",
+  "private": true,
+  "homepage": "http://edgar004.github.io/centro-islam",
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@fullcalendar/core": "^5.11.0",
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/react": "^5.11.1",
+    "@hookform/error-message": "^2.0.0",
+    "@mui/material": "^5.5.2",
+    "base-64": "^1.0.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.9",
+    "init-env": "0.0.7",
+    "moment": "2.29.1",
+    "node-sass": "6.0.0",
+    "nouislider": "15.1.0",
+    "react": "17.0.2",
+    "react-bootstrap-switch": "15.5.3",
+    "react-datetime": "3.0.4",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.28.0",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.8",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
+    "reactstrap": "8.9.0",
+    "reactstrap-date-picker": "0.0.15",
+    "redux": "^4.1.2",
+    "underscore": "^1.13.3"
+  },
+  "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
+    "minify-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "@babel/core": "7.14.3",
+    "typescript": "4.2.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

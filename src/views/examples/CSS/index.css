@@ -1,0 +1,10 @@
+@media (max-width: 1200px) {
+  .container-bhb {
+    display: "block";
+  }
+}
+.addEventBtn{
+  margin: auto;
+  width: 50%;
+  height: 20px;
+}
